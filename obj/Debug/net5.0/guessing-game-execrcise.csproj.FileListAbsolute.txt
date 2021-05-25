@@ -1,0 +1,16 @@
+C:\Users\david\workspace\guessing-game-execrcise\bin\Debug\net5.0\guessing-game-execrcise.exe
+C:\Users\david\workspace\guessing-game-execrcise\bin\Debug\net5.0\guessing-game-execrcise.deps.json
+C:\Users\david\workspace\guessing-game-execrcise\bin\Debug\net5.0\guessing-game-execrcise.runtimeconfig.json
+C:\Users\david\workspace\guessing-game-execrcise\bin\Debug\net5.0\guessing-game-execrcise.runtimeconfig.dev.json
+C:\Users\david\workspace\guessing-game-execrcise\bin\Debug\net5.0\guessing-game-execrcise.dll
+C:\Users\david\workspace\guessing-game-execrcise\bin\Debug\net5.0\ref\guessing-game-execrcise.dll
+C:\Users\david\workspace\guessing-game-execrcise\bin\Debug\net5.0\guessing-game-execrcise.pdb
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.csprojAssemblyReference.cache
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.AssemblyInfoInputs.cache
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.AssemblyInfo.cs
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.csproj.CoreCompileInputs.cache
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.dll
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\ref\guessing-game-execrcise.dll
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.pdb
+C:\Users\david\workspace\guessing-game-execrcise\obj\Debug\net5.0\guessing-game-execrcise.genruntimeconfig.cache
