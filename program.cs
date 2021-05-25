@@ -1,13 +1,16 @@
 ﻿using System;
 
 
-int secretNum =  new Random().Next(1, 100);
+int secretNum = new Random().Next(1, 100);
 Console.WriteLine("Hint: " + secretNum);
 
 
 
-void AskHard()
+void AskEasy()
 {
+    Console.WriteLine(" ");
+    Console.WriteLine("----EASY DIFFICULTY (8 guesses) ----");
+    Console.WriteLine(" ");
     bool success = false;
 
     Console.Write("Guess the secret number: ");
@@ -20,81 +23,54 @@ void AskHard()
     }
     else
     {
-      if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-    }
-
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (3 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
+        if (guess > secretNum)
         {
-            Console.WriteLine("SUCCESS!");
-            success = true;
+            Console.WriteLine("FAILURE! too high");
         }
         else
         {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+            Console.WriteLine("FAILURE! too low");
         }
     }
+
+    int guessesLeft = 8;
 
     if (success == false)
     {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (2 guess left):");
-        guess = int.Parse(Console.ReadLine());
 
-        if (guess == secretNum)
+        while (guessesLeft > 1)
         {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+            guessesLeft = guessesLeft - 1;
+            Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (" + (guessesLeft) + " guesses left):");
+            guess = int.Parse(Console.ReadLine());
+
+            if (guess == secretNum)
+            {
+                Console.WriteLine("SUCCESS!");
+                success = true;
+            }
+            else
+            {
+                if (guess > secretNum)
+                {
+                    Console.WriteLine("FAILURE! too high");
+                }
+                else
+                {
+                    Console.WriteLine("FAILURE! too low");
+                }
+            }
         }
     }
 
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (1 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-            if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
 
 }
 
 void AskMedium()
 {
+    Console.WriteLine(" ");
+    Console.WriteLine("----MEDIUM DIFFICULTY (6 guesses) ----");
+    Console.WriteLine(" ");
     bool success = false;
 
     Console.Write("Guess the secret number: ");
@@ -107,122 +83,54 @@ void AskMedium()
     }
     else
     {
-      if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+        if (guess > secretNum)
+        {
+            Console.WriteLine("FAILURE! too high");
+        }
+        else
+        {
+            Console.WriteLine("FAILURE! too low");
+        }
     }
+
+    int guessesLeft = 6;
 
     if (success == false)
     {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (5 guess left):");
-        guess = int.Parse(Console.ReadLine());
 
-        if (guess == secretNum)
+        while (guessesLeft > 1)
         {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+            guessesLeft = guessesLeft - 1;
+            Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (" + (guessesLeft) + " guesses left):");
+            guess = int.Parse(Console.ReadLine());
+
+            if (guess == secretNum)
+            {
+                Console.WriteLine("SUCCESS!");
+                success = true;
+            }
+            else
+            {
+                if (guess > secretNum)
+                {
+                    Console.WriteLine("FAILURE! too high");
+                }
+                else
+                {
+                    Console.WriteLine("FAILURE! too low");
+                }
+            }
         }
     }
 
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (4 guess left):");
-        guess = int.Parse(Console.ReadLine());
 
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (3 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-            if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (2 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (1 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-            if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
 }
 
-void AskEasy()
+void AskHard()
 {
+    Console.WriteLine(" ");
+    Console.WriteLine("----HARD DIFFICULTY (4 guesses) ----");
+    Console.WriteLine(" ");
     bool success = false;
 
     Console.Write("Guess the secret number: ");
@@ -235,181 +143,73 @@ void AskEasy()
     }
     else
     {
-      if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+        if (guess > secretNum)
+        {
+            Console.WriteLine("FAILURE! too high");
+        }
+        else
+        {
+            Console.WriteLine("FAILURE! too low");
+        }
     }
+
+    int guessesLeft = 4;
 
     if (success == false)
     {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (7 guess left):");
-        guess = int.Parse(Console.ReadLine());
 
-        if (guess == secretNum)
+        while (guessesLeft > 1)
         {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+            guessesLeft = guessesLeft - 1;
+            Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (" + (guessesLeft) + " guesses left):");
+            guess = int.Parse(Console.ReadLine());
+
+            if (guess == secretNum)
+            {
+                Console.WriteLine("SUCCESS!");
+                success = true;
+            }
+            else
+            {
+                if (guess > secretNum)
+                {
+                    Console.WriteLine("FAILURE! too high");
+                }
+                else
+                {
+                    Console.WriteLine("FAILURE! too low");
+                }
+            }
         }
     }
 
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (6 guess left):");
-        guess = int.Parse(Console.ReadLine());
 
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (5 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-            if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (4 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (3 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-            if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (2 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
-
-    if (success == false)
-    {
-        Console.Write("Your guess > " + "(" + guess + ") " + "Try Again (1 guess left):");
-        guess = int.Parse(Console.ReadLine());
-
-        if (guess == secretNum)
-        {
-            Console.WriteLine("SUCCESS!");
-            success = true;
-        }
-        else
-        {
-            if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
-        }
-    }
 }
+
 
 Console.Write("Choose a difficulty level: 1-Easy 2-Medium 3-Hard: ");
 int difficulty = int.Parse(Console.ReadLine());
 
-if(difficulty == 1){
-  AskEasy();
+if (difficulty == 1)
+{
+    AskEasy();
 }
 
-if(difficulty == 2){
-  AskMedium();
+if (difficulty == 2)
+{
+    AskMedium();
 }
 
-if(difficulty == 3){
-  AskHard();
+if (difficulty == 3)
+{
+    AskHard();
 }
 
-if(difficulty == 4){
-   Console.WriteLine("{CHEATER MODE ACTIVATED}");
-   Console.WriteLine(" ");
-  bool success = false;
+if (difficulty == 4)
+{
+    Console.WriteLine("{CHEATER MODE ACTIVATED}");
+    Console.WriteLine(" ");
+    bool success = false;
     Console.Write("Guess the secret number: ");
     int guess = int.Parse(Console.ReadLine());
 
@@ -420,12 +220,14 @@ if(difficulty == 4){
     }
     else
     {
-      if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+        if (guess > secretNum)
+        {
+            Console.WriteLine("FAILURE! too high");
+        }
+        else
+        {
+            Console.WriteLine("FAILURE! too low");
+        }
     }
 
     while (success == false)
@@ -440,12 +242,14 @@ if(difficulty == 4){
         }
         else
         {
-           if(guess > secretNum){
-        Console.WriteLine("FAILURE! too high");
-      }
-      else{
-         Console.WriteLine("FAILURE! too low");
-      }
+            if (guess > secretNum)
+            {
+                Console.WriteLine("FAILURE! too high");
+            }
+            else
+            {
+                Console.WriteLine("FAILURE! too low");
+            }
         }
     }
 }
